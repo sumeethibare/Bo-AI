@@ -18,7 +18,7 @@ def listen():
         command = recognizer.recognize_google(audio)
         print("You said:", command)
         return command.lower()
-    except sr.UnknownValueError:
+    except sr.UnknownValueError:  
         print("Sorry, I couldn't understand.")
         return ""
     except sr.RequestError:
